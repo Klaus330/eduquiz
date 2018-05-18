@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E5"
+    android:padding="16dp"
+    tools:context=".CategoryActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/grafButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_border"
+            android:drawableBottom="@drawable/ic_star_border_black_24dp"
+            android:drawableTop="@drawable/ic_business_affiliate_network"
+            android:padding="20dp"
+            android:text="Grafuri"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/hardwareButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_border"
+            android:drawableBottom="@drawable/ic_star_border_black_24dp"
+            android:drawableTop="@drawable/ic_memory_chip"
+            android:padding="20dp"
+            android:text="Hardware"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/softwareButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grafButton" />
+
+        <Button
+            android:id="@+id/softwareButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_border"
+            android:drawableBottom="@drawable/ic_star_border_black_24dp"
+            android:drawableTop="@drawable/ic_view_quilt_black_24dp"
+            android:padding="20dp"
+            android:text="Software"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/hardwareButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/hardwareButton"
+            app:layout_constraintTop_toTopOf="@+id/hardwareButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
